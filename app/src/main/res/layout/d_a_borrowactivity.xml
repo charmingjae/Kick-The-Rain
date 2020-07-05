@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgGoBack"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:paddingLeft="16dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingRight="16dp"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            app:srcCompat="@drawable/ic_chevron_left_black_24dp" />-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="밖에 비온다 주륵주륵!"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="현재 남은 우산의 개수는..."
+            android:textColor="@color/colorDarkWhite"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="25dp">
+
+
+            <TextView
+                android:id="@+id/numUmb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="130sp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnUmbReturn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0"
+            android:background="@drawable/btn_radius_borrow_umb"
+            android:text="우산 쓰고 가기 🌂"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnMyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0"
+            android:background="@drawable/btn_radius_my_info"
+            android:text="내 정보"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/chkAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="혹시 관리자세요?"
+            android:textColor="@color/colorDarkWhite"
+            android:textSize="18sp" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnGoAdminMenu"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0"
+            android:background="@drawable/btn_radius_borrow_umb"
+            android:text="🏅관리자 메뉴 가기🏅"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

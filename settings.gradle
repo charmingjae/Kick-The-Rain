@@ -1,0 +1,2 @@
+rootProject.name='blockbusters'
+include ':app'

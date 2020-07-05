@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inhatc.blockbusters">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LoginActivity"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".GetRatio.A_getRatio"></activity>
+        <activity android:name=".SetCount.A_SetUmbCount" />
+        <activity android:name=".OverdueInfo.A_OverdueInfo" />
+        <activity android:name=".G.A_overdue" />
+        <activity android:name=".MyInfo.A_MyInfo" />
+        <activity android:name=".F.A_adminMenu" />
+        <activity android:name=".E.A_listBorrower" />
+        <activity android:name=".D.A_BorrowActivity" />
+        <activity android:name=".C.A_RegisterActivity" />
+        <activity
+            android:name=".A.rainshield"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imgGoBr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center|start"
+            android:text="회원가입"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:text="환영합니다! 계속 하시려면 정보를 입력하세요."
+                        android:textColor="@color/colorDarkWhite"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginRight="25dp">
+
+
+                        <EditText
+                            android:id="@+id/regStuNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:ems="10"
+                            android:hint="학번"
+                            android:inputType="number"
+                            android:maxLength="9"
+                            android:singleLine="true"
+                            android:textColor="@color/colorDarkWhite"
+                            android:textColorHint="@color/colorGray" />
+
+                        <ImageView
+                            android:id="@+id/imgCancelStuNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:padding="16dp"
+                            app:srcCompat="@drawable/ic_cancel_black_24dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp">
+
+
+                        <EditText
+                            android:id="@+id/regPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:ems="10"
+                            android:hint="비밀번호"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/colorDarkWhite"
+                            android:textColorHint="@color/colorGray" />
+
+                        <ImageView
+                            android:id="@+id/imgCancelPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:padding="16dp"
+                            app:srcCompat="@drawable/ic_cancel_black_24dp" />
+
+                    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp">
+
+            <ListView
+                android:visibility="gone"
+                android:id="@+id/lstMember"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <Button
+                        android:id="@+id/btnUmbReturn"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="29dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/btn_radius"
+                        android:text="회원가입"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>

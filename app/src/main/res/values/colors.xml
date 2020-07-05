@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#333639</color>
+
+    <color name="colorGray">#949394</color>
+    <color name="colorWhiteGray">#B6B6B6</color>
+    <color name="colorDarkWhite">#606266</color>
+    <color name="colorBorrowbutton">#0342ef</color>
+
+    <color name="colorRed">#ed7653</color>
+
+    <color name="colorMyInfo">#006600</color>
+</resources>
